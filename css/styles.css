@@ -348,10 +348,11 @@ border-bottom: 1px solid #eeeeee;
 
 .modal-policy:checked + .modal-policy-text::before{
     background-color: var(--color-focus);
-    background-image: url("/img/modal/ok.svg");
+    background-image: url("/img/modal/oke.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
-
+    border: 1px solid var(--color-focus);
+    border-radius: 4px;
 }
 
 .modal-policy-text::before {
@@ -361,6 +362,7 @@ border-bottom: 1px solid #eeeeee;
     height: 15px;
     border: 1px solid #212121;
     margin-right: 7px;
+    border-radius: 4px;
 }
 
 .modal-policy-text {
@@ -709,6 +711,47 @@ color: #FFFFFF;
     margin-top: 12px;
 }
 
+.footer-label{
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1,142;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    width: 358px;
+    height: 50px;
+
+    color: #FFFFFF;
+}
+
+.footer-input {
+    width: 358px;
+    height: 50px;
+    margin-top: 20px;
+
+    border: 1 solit var(--color-text);
+}
+
+.footer-form{
+    display: flex;
+    margin-left: 93px;
+    margin-top: 12px;
+}
+
+.footer-form-btn{
+    width: 200px;
+    height: 50px;
+    margin-top: 36px;
+    margin-left: 12px;
+    background-color: var(--color-focus);
+    border: 1 solit var(--color-focus);
+    border-radius: 4px;
+    padding: 10px 62px 10px 29px;
+
+    text-align: center;
+    letter-spacing: 0.06em;
+}
+
+
 /* =============== PORTFOLIO CATEGORIES ===============*/
 
 .portfolio .container {
@@ -863,52 +906,4 @@ padding: 6px 22px;
     letter-spacing: 0.03em;
     width: 322px;
     color: rgb(255, 255, 255);
-}
-
-.footer-label-text{
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 1.142;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: #FFFFFF;
-
-    margin-top: 12px;
-}
-
-.footer-form{
-    margin-left: 93px;
-}
-
-.footer-input{
-    width: 358px;
-    height: 50px;
-    padding-left: 16px;
-    margin-top: 20px;
-
-    background: #2F303A;
-    border: 1px solid rgba(255, 255, 255, 0.3)
-}
-
-.footer-input:focus{
-    outline: none;
-    border: 1px solid rgba(33, 150, 243, 1);
-    color: var(--color-text);
-}
-
-.footer-btn-form{
-    background: rgba(33, 150, 243, 1);
-    border-radius: 4px;
-    height: 50px;
-    width: 200px;
-    border: 0px;
-
-    padding-top: 10px;
-    padding-bottom: 10px;
-    padding-left: 29px;
-    padding-right: 62px;
-}
-
-.footer-btn-form{
-    outline: none;
 }
