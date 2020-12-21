@@ -251,7 +251,8 @@ border-bottom: 1px solid #eeeeee;
 }
   .modal-close-btn {
     position: absolute;
-    right: 0;
+    right: 8px;
+    top: 8px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -727,8 +728,22 @@ color: #FFFFFF;
     width: 358px;
     height: 50px;
     margin-top: 20px;
+    background: rgba(47, 48, 58, 1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 
-    border: 1 solit var(--color-text);
+    padding-left: 16px;
+
+    font-size: 16px;
+    line-height: 20px;
+    align-items: center;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-input:focus{
+    border: none;
+    box-shadow: none;
+    border-radius: 0px;
 }
 
 .footer-form{
@@ -738,6 +753,7 @@ color: #FFFFFF;
 }
 
 .footer-form-btn{
+display: flex;
     width: 200px;
     height: 50px;
     margin-top: 36px;
@@ -745,13 +761,18 @@ color: #FFFFFF;
     background-color: var(--color-focus);
     border: 1 solit var(--color-focus);
     border-radius: 4px;
-    padding: 10px 62px 10px 29px;
-
+    padding: 10px 10px 10px 29px;
+    
+    font-size: 16px;
+    line-height: 1.875;
     text-align: center;
     letter-spacing: 0.06em;
+    color: rgb(255, 255, 255);
 }
 
-
+.footer-form-svg {
+    margin-left: 10px;
+}
 /* =============== PORTFOLIO CATEGORIES ===============*/
 
 .portfolio .container {
