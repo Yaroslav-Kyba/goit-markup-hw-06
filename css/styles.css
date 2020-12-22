@@ -2,6 +2,7 @@
     --color-text: #757575;
     --color-title: #212121;
     --color-focus: #2196F3;
+    --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -92,6 +93,7 @@ border-bottom: 1px solid #eeeeee;
     letter-spacing: 0.02em;
     color: var(--color-title);
     padding-bottom: 31px;
+    transition: color 250ms var(--timing-function)
 }
 
 .navigation-list-item-link.current {
@@ -135,6 +137,7 @@ border-bottom: 1px solid #eeeeee;
     line-height: 1.142;
     letter-spacing: 0.02em;
     color: var(--color-text);
+    transition: color 250ms var(--timing-function)
 }
 
 .contact-information-link:hover,
@@ -143,6 +146,9 @@ border-bottom: 1px solid #eeeeee;
 .contact-information-link:focus .header-icon {
     color: var(--color-focus);
     fill: var(--color-focus) ;
+    transition: color 250ms var(--timing-function),
+    fill 250ms var(--timing-function),
+    border-color 250ms var(--timing-function);
 }
 
 .header-icon{
@@ -573,6 +579,9 @@ border-bottom: 1px solid #eeeeee;
     height: 44px;
     border-radius: 50%;
     background-color: #ffffff;
+
+    transition: color 250ms var(--timing-function),
+    background-color 250ms var(--timing-function);
 }
 
 .social-logo-link:not(:last-child) {
@@ -624,6 +633,9 @@ border-bottom: 1px solid #eeeeee;
     fill: rgba(175, 177, 184, 1);
 
     margin-bottom: 94px;
+    transition: color 250ms var(--timing-function),
+    fill 250ms var(--timing-function),
+    border-color 250ms var(--timing-function);
   }
 
 .clients-link:hover,
@@ -696,6 +708,7 @@ color: #FFFFFF;
 
 .join-list-link {
       fill: #ffffff;
+      transition: background-color 250ms var(--timing-function);
   }
 
 .join-list-link:hover,
@@ -738,6 +751,8 @@ color: #FFFFFF;
     align-items: center;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+
+    transition: background-color 250ms var(--timing-function);
 }
 
 .footer-input:focus{
@@ -748,7 +763,7 @@ color: #FFFFFF;
 
 .footer-form{
     display: flex;
-    margin-left: 93px;
+    margin-left: 112px;
     margin-top: 12px;
 }
 
@@ -822,6 +837,10 @@ border-radius: 4px;
 border: none;
 box-shadow: none;
 padding: 6px 22px;
+
+transition: color 250ms var(--timing-function),
+background-color 250ms var(--timing-function),
+box-shadow 250ms var(--timing-function);
 }
 
 
@@ -855,6 +874,9 @@ padding: 6px 22px;
     height: 404px;
     border: 1px solid #EEEEEE;
     box-sizing: border-box;
+
+    transition: color 250ms var(--timing-function),
+    box-shadow 250ms var(--timing-function);
 }
 
 .list-categories-item {
